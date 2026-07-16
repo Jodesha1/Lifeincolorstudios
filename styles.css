@@ -266,15 +266,22 @@ em { font-style: italic; color: var(--color-terra); }
    ================================================ */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(145deg, #f7f1e8 0%, #ead7bc 45%, #d9b48b 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 7rem 1.5rem 5rem;
-  position: relative;
-  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 12% 22%, rgba(255,198,176,.35) 0%, transparent 26%),
+    radial-gradient(circle at 88% 18%, rgba(200,174,214,.28) 0%, transparent 24%),
+    radial-gradient(circle at 82% 82%, rgba(148,191,182,.22) 0%, transparent 28%),
+    radial-gradient(circle at 8% 86%, rgba(252,220,169,.30) 0%, transparent 24%),
+    linear-gradient(180deg,#FFFDFB 0%, #FDF7F2 100%);
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:7rem 1.5rem 5rem;
+  position:relative;
+  overflow:hidden;
 }
 
 .hero::before {
