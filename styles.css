@@ -420,17 +420,32 @@ em { font-style: italic; color: var(--color-terra); }
 .text-block .btn { margin-top: 0.75rem; }
 
 .visual-block {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.25rem 1.25rem 1.75rem 0;
+}
+
+.visual-block::before {
+  content: "";
+  position: absolute;
+  top: 2.25rem;
+  right: 0;
+  width: 88%;
+  height: 88%;
+  background: var(--color-sage-lt);
+  border-radius: var(--radius-lg);
 }
 
 .feature-portrait {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  max-width: 480px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  max-width: 520px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
 }
