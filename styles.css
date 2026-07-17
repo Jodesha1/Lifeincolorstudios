@@ -419,6 +419,22 @@ em { font-style: italic; color: var(--color-terra); }
 .text-block p { margin-bottom: 1.1rem; }
 .text-block .btn { margin-top: 0.75rem; }
 
+.visual-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-portrait {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
 .season-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
